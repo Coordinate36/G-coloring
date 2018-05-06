@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Tabu {
-    private final String dir = "/home/whb/program/cpp/algorithm/hw6/";
+    private final String dir = "/home/whb/program/java/Tabu/";
     private final String INFILE = dir + "data/DSJC500.5.col.txt";
     private final String OUTFILE = dir + "out.txt";
     private final int MAX_DELT = 1000;
@@ -11,7 +11,7 @@ public class Tabu {
     private int[][] tabuList;           // 禁忌表
     private int[][] adjColorTable;      // 邻接颜色表,标记每个顶点邻接某颜色的顶点数
     private int[] colors;               // 每个顶点对应的颜色
-    private int[] vEdge;                  // 每个顶点的边数
+    private int[] vEdge;                // 每个顶点的边数
     private int delt;                   // 移动增量
     private int conflictNum;            // 冲突数
     private int bestConflictNum;        // 历史最佳冲突数
