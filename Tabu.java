@@ -149,6 +149,12 @@ public class Tabu {
             double end_time = System.currentTimeMillis();
             double elapsedTime = (end_time - start_time) / 1000;
             System.out.println("Success, iterations: " + iter + "elapsed time: " + elapsedTime + "frequence: " + (iter / elapsedTime));
+            for (int i = 0; i < N; ++i) {
+                System.out.printf("Vertex %d's color : %d\t", i, colors[i]);
+                    if (i % 3 == 2) {
+                        System.out.println();
+                    }
+            }
         }
     }
 
